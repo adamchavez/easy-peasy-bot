@@ -81,6 +81,11 @@ controller.on('rtm_close', function (bot) {
  */
 // BEGIN EDITING HERE!
 
+
+bot.startPrivateConversation({ user: 'U0XXXXXX' },function(err,dm) {
+    dm.say('Private reply!');
+})
+
 controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
 });
